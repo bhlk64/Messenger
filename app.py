@@ -11,8 +11,8 @@ PAGE_ACCESS_TOKEN = os.environ.get("PAGE_ACCESS_TOKEN")
 APP_SECRET = os.environ.get("APP_SECRET")
 VERIFY_TOKEN = os.environ.get("VERIFY_TOKEN", "changeme123")
 
-if not PAGE_ACCESS_TOKEN or not APP_SECRET:
-    raise RuntimeError("Thiếu PAGE_ACCESS_TOKEN hoặc APP_SECRET trong env!")
+#if not PAGE_ACCESS_TOKEN or not APP_SECRET:
+#    raise RuntimeError("Thiếu PAGE_ACCESS_TOKEN hoặc APP_SECRET trong env!")
 
 def mask(s):
     return s[:4] + "..." + s[-4:] if s else None
